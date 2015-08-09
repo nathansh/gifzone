@@ -2,3 +2,30 @@
 	Layout goes in this file. Susy setup should go here too.
 	Layout classes should be prefixed `.l-`
 */
+
+$susy: (
+	columns: $grid-columns-large,
+	use-custom: (rem: true),
+	global-box-sizing: border-box,
+	gutter-position: inside-static,
+	column-width: 70px,
+	gutters: 20px/70px,
+	debug: (
+		image: show-columns,
+		output: overlay,
+		toggle: bottom left,
+	)
+);
+
+.l-container {
+	@include container();
+	@include clearfix;
+	padding-left: gutter() * 2;
+	padding-right: gutter() * 2;
+	@media (max-width: $breakpoint-small) {
+		@include container($grid-columns-small);
+	}
+	@media (max-width: $breakpoint-smaller) {
+		@include container($grid-columns-small);
+	}
+}

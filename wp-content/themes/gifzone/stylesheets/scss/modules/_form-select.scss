@@ -1,0 +1,35 @@
+// select,
+.form-select {
+	$block: &;
+	@include border-radius(0);
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	border: 1px solid $color-keyline;
+	display: block;
+	width: 100%;
+	background: none;
+	padding: .5em;
+	&::-ms-expand {
+	    display: none;
+	}
+	&__wrapper {
+		position: relative;
+		&:after {
+			@include icon($icon-sort);
+			display: block;
+			font-size: 18px;
+			line-height: 18px;
+			width: 15px;
+			height: 15px;
+			position: absolute;
+			top: 50%;
+			right: 5px;
+			margin-top: -9px;
+		} // &:after
+		.lt-ie10 &:after,
+		&.form-select--multiple:after {
+			content: none;
+			display: none;
+		} // #{$block}--multiple &
+	} // &__wrapper
+} // .form-select

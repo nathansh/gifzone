@@ -1,0 +1,89 @@
+/*
+	Form layout
+*/
+
+.form {
+	@include clearfix;
+	$block: &;
+	&--inline {
+		margin-bottom: -5px;
+	} // &--inline
+	&__group {
+		@include clearfix;
+		display: block;
+		position: relative;
+		margin-bottom: .75em;
+		#{$block}--inline & {
+			display: inline-block;
+			vertical-align: middle;
+			margin-bottom: 5px;
+			margin-right: .5em;
+			label {
+				margin-right: .25em;
+			} // label
+			@media (max-width: $breakpoint-mid) {
+				display: block;
+				width: 100%;
+			}
+		} // --inline
+		#{$block}--horizontal & {
+			label {
+				@include span(2 first);
+				@include small-full;
+				text-align: right;
+				padding-top: .4em;
+				@media (max-width: $breakpoint-small) {
+					text-align: left;
+					padding-top: inherit;
+				}
+			} // label
+			input[type="checkbox"] + label,
+			input[type="radio"] + label {
+				padding-top: inherit;
+			}
+		} // --horizontal
+		label {
+			margin-bottom: 5px;
+		} // label
+	} // &__group
+	&__control {
+		#{$block}--inline & {
+			display: inline-block;
+			vertical-align: middle;
+			width: auto;
+			@media (max-width: $breakpoint-mid) {
+				display: block;
+				width: 100%;
+			}
+		} // --inline
+	} // &__controll
+	#{$block}--horizontal &__horizontal-input {
+		@include span(10 last);
+		@include small-full;
+		label {
+			float: none;
+			width: auto;
+			text-align: left;
+			padding-left: 0;
+			padding-right: 0;
+		} // input
+	} // &__horizontal-input
+	&__help {
+		font: {
+			size: $font-size-body - 1;
+			weight: $font-weight-normal;
+		} // font:
+		color: lighten($color-base, 30%);
+		margin: .5em 0;
+	} // &__help
+	&__checkbox,
+	&__radio {
+		&--inline {
+			display: inline-block;
+			margin-right: 1em;
+			&:last-child {
+				margin-right: auto;
+			} // &:last-child
+		} // &--inline
+	} // &__checkbox, &__radio
+} // form

@@ -2,7 +2,7 @@
 
 	<div class="l-main">
 
-		<section class="l-content">
+		<section class="l-container">
 
 			<h2 class="u-screen-reader">Main content</h2>
 

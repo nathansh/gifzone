@@ -12,6 +12,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="content-type" content="<?php bloginfo('html_type') ?>; charset=<?php bloginfo('charset') ?>" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<link href='http://fonts.googleapis.com/css?family=Pathway+Gothic+One' rel='stylesheet' type='text/css'>
 
     <!-- This bit of the uggliest code you've ever seen deals an icon font loading issue in IE8 -->
     <!--[if IE 8]>
@@ -27,23 +28,8 @@
 </head>
 <body <?php body_class(); ?>>
 
-	<header class="masthead">
-		<h1 class="site-name"><a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a></h1>
-		<?php
-
-			/**
-			 * @link https://codex.wordpress.org/Function_Reference/wp_nav_menu
-			 */
-			wp_nav_menu( array(
-				'container' => 'nav',
-				'container_class' => 'primary-nav',
-				'theme_location' => 'primary',
-				'menu_class' => 'primary-nav__items',
-				'items_wrap' => '<h2 class="u-screen-reader">Main menu</h2><ul class="%2$s">%3$s</ul>',
-				'depth' => 1
-				)
-			);
-
-			get_search_form();
-		?>
-	</header><!-- #masthead -->
+	<div class="l-container">
+		<header class="masthead">
+			<h1 class="site-name"><span class="site-name__icon">💂</span><a href="<?php bloginfo('url'); ?>" class="site-name__text"><?php bloginfo('name'); ?></a></h1>
+		</header><!-- #masthead -->
+	</div>

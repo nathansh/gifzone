@@ -1,0 +1,12 @@
+.gif-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	&__item {
+		@include gallery(2);
+		margin-bottom: gutter() * 2;
+		@media (max-width: $breakpoint-small) {
+			@include gallery(4);
+		} // small
+	} // &__item
+} // .gif-list

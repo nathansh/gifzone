@@ -1,0 +1,112 @@
+/*
+	Base form reset
+*/
+
+fieldset {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	min-width: 0;
+}
+
+legend {
+	display: block;
+	width: 100%;
+	padding: 0;
+	line-height: inherit;
+}
+
+label {
+	display: inline-block;
+	max-width: 100%; // Force IE8 to wrap long content (see https://github.com/twbs/bootstrap/issues/13141)
+}
+
+input[type='search'] {
+	@include box-sizing(border-box);
+	-webkit-appearance: none;
+}
+
+input[type='radio'],
+input[type='checkbox'] {
+	margin: 4px 5px 0 0;
+	line-height: normal;
+}
+
+input[type='file'] {
+	display: block;
+}
+
+input[type='range'] {
+	display: block;
+	width: 100%;
+}
+
+select[multiple],
+select[size] {
+	height: auto;
+}
+
+output {
+	display: block;
+}
+
+
+/*
+	Form element base styles
+*/
+
+legend {
+	color: lighten($color-base, 10%);
+	border: 0;
+	border-bottom: 1px solid $color-keyline;
+}
+
+select,
+textarea,
+input {
+	padding: .5em;
+	display: block;
+	width: 100%;
+	background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
+	border: 1px solid $color-keyline;
+}
+
+input[type='radio'],
+input[type='checkbox'],
+input[type='file'] {
+	border: 0;
+	padding: initial;
+	width: auto;
+}
+
+input[type='radio'],
+input[type='checkbox'] {
+	display: inline-block;
+}
+
+/*
+	Validation states
+*/
+label {
+	.has-error & {
+		color: $color-state-error;
+	}
+	.has-success & {
+		color: $color-state-success;
+	}
+	.has-warning & {
+		color: $color-state-warning;
+	}
+}
+
+input {
+	.has-error & {
+		border-color: $color-state-error;
+	}
+	.has-success & {
+		border-color: $color-state-success;
+	}
+	.has-warning & {
+		border-color: $color-state-warning;
+	}
+}

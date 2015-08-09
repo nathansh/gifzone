@@ -11,6 +11,7 @@ html {
 body {
 	font-family: $font-base;
 	color: $color-base;
+	background: $color-canvas;
 }
 
 p, ul, ol {
@@ -21,3 +22,11 @@ p, ul, ol {
 		margin-bottom: 0; // This is because of normalize. If you Meyer you have it anyway.
 	}
 }
+
+img {
+	@include responsive-image;
+}
+
+a {
+	color: $color-brand;
+} // a

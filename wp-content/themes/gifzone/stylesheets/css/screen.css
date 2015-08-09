@@ -3235,7 +3235,7 @@ th {
 .u-clearfix {
   zoom: 1;
 }
-/* line 8, ../scss/_mixins.scss */
+/* line 24, ../scss/_mixins.scss */
 .u-clearfix:after {
   content: ".";
   display: block;
@@ -3246,7 +3246,7 @@ th {
 
 /* line 22, ../scss/_utility.scss */
 .u-reverse {
-  color: #fff;
+  color: #000;
 }
 /* line 25, ../scss/_utility.scss */
 .u-reverse * {
@@ -3272,6 +3272,154 @@ th {
 	Layout goes in this file. Susy setup should go here too.
 	Layout classes should be prefixed `.l-`
 */
+/* line 20, ../scss/_layout.scss */
+.l-container {
+  max-width: 1080px;
+  margin-left: auto;
+  margin-right: auto;
+  zoom: 1;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+/* line 12, ../../../../../../../../.rvm/gems/ruby-2.2.0/gems/susy-2.2.2/sass/susy/output/support/_clearfix.scss */
+.l-container:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+/* line 65, ../../../../../../../../.rvm/gems/ruby-2.2.0/gems/susy-2.2.2/sass/susy/language/susy/_background.scss */
+head {
+  display: block;
+  position: fixed;
+  left: 10px;
+  bottom: 10px;
+  z-index: 999;
+  color: #333;
+  background: rgba(255, 255, 255, 0.25);
+}
+/* line 66, ../../../../../../../../.rvm/gems/ruby-2.2.0/gems/susy-2.2.2/sass/susy/language/susy/_background.scss */
+head:before {
+  content: "|||";
+  display: block;
+  padding: 5px 10px;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+/* line 67, ../../../../../../../../.rvm/gems/ruby-2.2.0/gems/susy-2.2.2/sass/susy/language/susy/_background.scss */
+head:hover {
+  background: rgba(255, 255, 255, 0.5);
+  color: red;
+}
+/* line 71, ../../../../../../../../.rvm/gems/ruby-2.2.0/gems/susy-2.2.2/sass/susy/language/susy/_background.scss */
+head:hover ~ .l-container, head:hover ~ body .l-container {
+  position: relative;
+}
+/* line 74, ../../../../../../../../.rvm/gems/ruby-2.2.0/gems/susy-2.2.2/sass/susy/language/susy/_background.scss */
+head:hover ~ .l-container:before, head:hover ~ body .l-container:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  content: " ";
+  z-index: 998;
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMCIgeTE9IjAuNSIgeDI9IjEuMCIgeTI9IjAuNSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzY2NjZmZiIgc3RvcC1vcGFjaXR5PSIwLjI1Ii8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjYjNiM2ZmIiBzdG9wLW9wYWNpdHk9IjAuMjUiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(102, 102, 255, 0.25)), color-stop(100%, rgba(179, 179, 255, 0.25)));
+  background-image: -moz-linear-gradient(left, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25));
+  background-image: -webkit-linear-gradient(left, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25));
+  background-image: linear-gradient(to right, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25));
+  background-size: 8.33333%;
+  background-origin: content-box;
+  background-clip: content-box;
+  background-position: left top;
+}
+/* line 24, ../scss/_mixins.scss */
+.l-container:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+@media (max-width: 600px) {
+  /* line 20, ../scss/_layout.scss */
+  .l-container {
+    max-width: 540px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* line 12, ../../../../../../../../.rvm/gems/ruby-2.2.0/gems/susy-2.2.2/sass/susy/output/support/_clearfix.scss */
+  .l-container:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+  /* line 71, ../../../../../../../../.rvm/gems/ruby-2.2.0/gems/susy-2.2.2/sass/susy/language/susy/_background.scss */
+  head:hover ~ .l-container, head:hover ~ body .l-container {
+    position: relative;
+  }
+  /* line 74, ../../../../../../../../.rvm/gems/ruby-2.2.0/gems/susy-2.2.2/sass/susy/language/susy/_background.scss */
+  head:hover ~ .l-container:before, head:hover ~ body .l-container:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    content: " ";
+    z-index: 998;
+    background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMCIgeTE9IjAuNSIgeDI9IjEuMCIgeTI9IjAuNSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzY2NjZmZiIgc3RvcC1vcGFjaXR5PSIwLjI1Ii8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjYjNiM2ZmIiBzdG9wLW9wYWNpdHk9IjAuMjUiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
+    background-size: 100%;
+    background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(102, 102, 255, 0.25)), color-stop(100%, rgba(179, 179, 255, 0.25)));
+    background-image: -moz-linear-gradient(left, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25));
+    background-image: -webkit-linear-gradient(left, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25));
+    background-image: linear-gradient(to right, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25));
+    background-size: 16.66667%;
+    background-origin: content-box;
+    background-clip: content-box;
+    background-position: left top;
+  }
+}
+@media (max-width: 420px) {
+  /* line 20, ../scss/_layout.scss */
+  .l-container {
+    max-width: 540px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* line 12, ../../../../../../../../.rvm/gems/ruby-2.2.0/gems/susy-2.2.2/sass/susy/output/support/_clearfix.scss */
+  .l-container:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+  /* line 71, ../../../../../../../../.rvm/gems/ruby-2.2.0/gems/susy-2.2.2/sass/susy/language/susy/_background.scss */
+  head:hover ~ .l-container, head:hover ~ body .l-container {
+    position: relative;
+  }
+  /* line 74, ../../../../../../../../.rvm/gems/ruby-2.2.0/gems/susy-2.2.2/sass/susy/language/susy/_background.scss */
+  head:hover ~ .l-container:before, head:hover ~ body .l-container:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    content: " ";
+    z-index: 998;
+    background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMCIgeTE9IjAuNSIgeDI9IjEuMCIgeTI9IjAuNSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzY2NjZmZiIgc3RvcC1vcGFjaXR5PSIwLjI1Ii8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjYjNiM2ZmIiBzdG9wLW9wYWNpdHk9IjAuMjUiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
+    background-size: 100%;
+    background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(102, 102, 255, 0.25)), color-stop(100%, rgba(179, 179, 255, 0.25)));
+    background-image: -moz-linear-gradient(left, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25));
+    background-image: -webkit-linear-gradient(left, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25));
+    background-image: linear-gradient(to right, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25));
+    background-size: 16.66667%;
+    background-origin: content-box;
+    background-clip: content-box;
+    background-position: left top;
+  }
+}
+
 /*
 	Sprites
   To use compass's sprite generating awesomeness, uncomment the include following this
@@ -3313,17 +3461,160 @@ html {
 
 /* line 11, ../scss/_base.scss */
 body {
-  font-family: proxima-nova, "Helvetica Neue", Arial, sans-serif;
-  color: #333;
+  font-family: "courier new", "Helvetica Neue", Arial, sans-serif;
+  color: #fff;
+  background: #000;
 }
 
-/* line 17, ../scss/_base.scss */
+/* line 18, ../scss/_base.scss */
 p:first-of-type, ul:first-of-type, ol:first-of-type {
   margin-top: 0;
 }
-/* line 20, ../scss/_base.scss */
+/* line 21, ../scss/_base.scss */
 p:last-of-type, ul:last-of-type, ol:last-of-type {
   margin-bottom: 0;
+}
+
+/* line 26, ../scss/_base.scss */
+img {
+  max-width: 100%;
+  height: auto;
+}
+/* line 52, ../scss/_mixins.scss */
+.ie8 img {
+  width: auto;
+}
+
+/* line 30, ../scss/_base.scss */
+a {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/*
+	Base form reset
+*/
+/* line 5, ../scss/_base-forms.scss */
+fieldset {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  min-width: 0;
+}
+
+/* line 12, ../scss/_base-forms.scss */
+legend {
+  display: block;
+  width: 100%;
+  padding: 0;
+  line-height: inherit;
+}
+
+/* line 19, ../scss/_base-forms.scss */
+label {
+  display: inline-block;
+  max-width: 100%;
+}
+
+/* line 24, ../scss/_base-forms.scss */
+input[type='search'] {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+}
+
+/* line 29, ../scss/_base-forms.scss */
+input[type='radio'],
+input[type='checkbox'] {
+  margin: 4px 5px 0 0;
+  line-height: normal;
+}
+
+/* line 35, ../scss/_base-forms.scss */
+input[type='file'] {
+  display: block;
+}
+
+/* line 39, ../scss/_base-forms.scss */
+input[type='range'] {
+  display: block;
+  width: 100%;
+}
+
+/* line 44, ../scss/_base-forms.scss */
+select[multiple],
+select[size] {
+  height: auto;
+}
+
+/* line 49, ../scss/_base-forms.scss */
+output {
+  display: block;
+}
+
+/*
+	Form element base styles
+*/
+/* line 58, ../scss/_base-forms.scss */
+legend {
+  color: white;
+  border: 0;
+  border-bottom: 1px solid #d7d7d7;
+}
+
+/* line 64, ../scss/_base-forms.scss */
+select,
+textarea,
+input {
+  padding: .5em;
+  display: block;
+  width: 100%;
+  background-image: none;
+  border: 1px solid #d7d7d7;
+}
+
+/* line 74, ../scss/_base-forms.scss */
+input[type='radio'],
+input[type='checkbox'],
+input[type='file'] {
+  border: 0;
+  padding: initial;
+  width: auto;
+}
+
+/* line 82, ../scss/_base-forms.scss */
+input[type='radio'],
+input[type='checkbox'] {
+  display: inline-block;
+}
+
+/*
+	Validation states
+*/
+/* line 91, ../scss/_base-forms.scss */
+.has-error label {
+  color: #ae0c14;
+}
+/* line 94, ../scss/_base-forms.scss */
+.has-success label {
+  color: #4c7c47;
+}
+/* line 97, ../scss/_base-forms.scss */
+.has-warning label {
+  color: #334558;
+}
+
+/* line 103, ../scss/_base-forms.scss */
+.has-error input {
+  border-color: #ae0c14;
+}
+/* line 106, ../scss/_base-forms.scss */
+.has-success input {
+  border-color: #4c7c47;
+}
+/* line 109, ../scss/_base-forms.scss */
+.has-warning input {
+  border-color: #334558;
 }
 
 /*
@@ -3342,12 +3633,418 @@ p:last-of-type, ul:last-of-type, ol:last-of-type {
 	@import "modules/module-name";
 
 */
+/* line 1, ../scss/modules/_editable.scss */
+.editable {
+  position: relative;
+}
+/* line 4, ../scss/modules/_editable.scss */
+.editable__link {
+  -moz-transition: opacity 0.05s ease-in-out;
+  -o-transition: opacity 0.05s ease-in-out;
+  -webkit-transition: opacity 0.05s ease-in-out;
+  transition: opacity 0.05s ease-in-out;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  opacity: 0;
+  pointer-events: none;
+  font-size: 0;
+  color: transparent;
+  z-index: 2;
+}
+/* line 14, ../scss/modules/_editable.scss */
+.editable__link:after {
+  font-family: "FontAwesome";
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "";
+  -moz-transition: color 0.1s ease-in-out, border 0.1s ease-in-out;
+  -o-transition: color 0.1s ease-in-out, border 0.1s ease-in-out;
+  -webkit-transition: color 0.1s ease-in-out, border 0.1s ease-in-out;
+  transition: color 0.1s ease-in-out, border 0.1s ease-in-out;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.8);
+  padding: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  background: rgba(0, 0, 0, 0.5);
+}
+/* line 24, ../scss/modules/_editable.scss */
+.editable__link:hover, .editable__link:focus {
+  text-decoration: none;
+}
+/* line 27, ../scss/modules/_editable.scss */
+.editable__link:hover:after, .editable__link:focus:after {
+  background: rgba(255, 255, 255, 0.8);
+  color: #000;
+}
+/* line 32, ../scss/modules/_editable.scss */
+.editable:hover .editable__link, .editable:focus .editable__link {
+  opacity: 1;
+  pointer-events: auto;
+}
+/* line 38, ../scss/modules/_editable.scss */
+.editable__placer {
+  position: relative;
+}
+
+/* line 2, ../scss/modules/_form-select.scss */
+.form-select {
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: 1px solid #d7d7d7;
+  display: block;
+  width: 100%;
+  background: none;
+  padding: .5em;
+}
+/* line 12, ../scss/modules/_form-select.scss */
+.form-select::-ms-expand {
+  display: none;
+}
+/* line 15, ../scss/modules/_form-select.scss */
+.form-select__wrapper {
+  position: relative;
+}
+/* line 17, ../scss/modules/_form-select.scss */
+.form-select__wrapper:after {
+  font-family: "FontAwesome";
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "";
+  display: block;
+  font-size: 18px;
+  line-height: 18px;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  margin-top: -9px;
+}
+/* line 29, ../scss/modules/_form-select.scss */
+.lt-ie10 .form-select__wrapper:after, .form-select__wrapper.form-select--multiple:after {
+  content: none;
+  display: none;
+}
+
+/*
+	Form layout
+*/
+/* line 5, ../scss/modules/_form.scss */
+.form {
+  zoom: 1;
+}
+/* line 24, ../scss/_mixins.scss */
+.form:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+/* line 8, ../scss/modules/_form.scss */
+.form--inline {
+  margin-bottom: -5px;
+}
+/* line 11, ../scss/modules/_form.scss */
+.form__group {
+  zoom: 1;
+  display: block;
+  position: relative;
+  margin-bottom: .75em;
+}
+/* line 24, ../scss/_mixins.scss */
+.form__group:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+/* line 16, ../scss/modules/_form.scss */
+.form--inline .form__group {
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 5px;
+  margin-right: .5em;
+}
+/* line 21, ../scss/modules/_form.scss */
+.form--inline .form__group label {
+  margin-right: .25em;
+}
+@media (max-width: 820px) {
+  /* line 16, ../scss/modules/_form.scss */
+  .form--inline .form__group {
+    display: block;
+    width: 100%;
+  }
+}
+/* line 30, ../scss/modules/_form.scss */
+.form--horizontal .form__group label {
+  width: 16.66667%;
+  float: left;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: right;
+  padding-top: .4em;
+}
+@media (max-width: 600px) {
+  /* line 30, ../scss/modules/_form.scss */
+  .form--horizontal .form__group label {
+    width: 100%;
+    float: none;
+    clear: both;
+  }
+}
+@media (max-width: 600px) {
+  /* line 30, ../scss/modules/_form.scss */
+  .form--horizontal .form__group label {
+    text-align: left;
+    padding-top: inherit;
+  }
+}
+/* line 40, ../scss/modules/_form.scss */
+.form--horizontal .form__group input[type="checkbox"] + label,
+.form--horizontal .form__group input[type="radio"] + label {
+  padding-top: inherit;
+}
+/* line 45, ../scss/modules/_form.scss */
+.form__group label {
+  margin-bottom: 5px;
+}
+/* line 50, ../scss/modules/_form.scss */
+.form--inline .form__control {
+  display: inline-block;
+  vertical-align: middle;
+  width: auto;
+}
+@media (max-width: 820px) {
+  /* line 50, ../scss/modules/_form.scss */
+  .form--inline .form__control {
+    display: block;
+    width: 100%;
+  }
+}
+/* line 60, ../scss/modules/_form.scss */
+.form--horizontal .form__horizontal-input {
+  width: 83.33333%;
+  float: right;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+@media (max-width: 600px) {
+  /* line 60, ../scss/modules/_form.scss */
+  .form--horizontal .form__horizontal-input {
+    width: 100%;
+    float: none;
+    clear: both;
+  }
+}
+/* line 63, ../scss/modules/_form.scss */
+.form--horizontal .form__horizontal-input label {
+  float: none;
+  width: auto;
+  text-align: left;
+  padding-left: 0;
+  padding-right: 0;
+}
+/* line 71, ../scss/modules/_form.scss */
+.form__help {
+  font-size: 13;
+  font-weight: 400;
+  color: white;
+  margin: .5em 0;
+}
+/* line 81, ../scss/modules/_form.scss */
+.form__checkbox--inline, .form__radio--inline {
+  display: inline-block;
+  margin-right: 1em;
+}
+/* line 84, ../scss/modules/_form.scss */
+.form__checkbox--inline:last-child, .form__radio--inline:last-child {
+  margin-right: auto;
+}
+
+/* line 1, ../scss/modules/_gif-filters.scss */
+.gif-filters {
+  padding: 20px 10px;
+}
+/* line 3, ../scss/modules/_gif-filters.scss */
+.gif-filters .form-select {
+  min-width: 110px;
+}
+
+/* line 1, ../scss/modules/_gif-list.scss */
+.gif-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+/* line 5, ../scss/modules/_gif-list.scss */
+.gif-list__item {
+  width: 16.66667%;
+  float: left;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 20px;
+}
+/* line 66, ../../../../../../../../.rvm/gems/ruby-2.2.0/gems/susy-2.2.2/sass/susy/language/susy/_gallery.scss */
+.gif-list__item:nth-child(6n + 1) {
+  margin-left: 0;
+  margin-right: -100%;
+  clear: both;
+}
+/* line 66, ../../../../../../../../.rvm/gems/ruby-2.2.0/gems/susy-2.2.2/sass/susy/language/susy/_gallery.scss */
+.gif-list__item:nth-child(6n + 2) {
+  margin-left: 16.66667%;
+  margin-right: -100%;
+  clear: none;
+}
+/* line 66, ../../../../../../../../.rvm/gems/ruby-2.2.0/gems/susy-2.2.2/sass/susy/language/susy/_gallery.scss */
+.gif-list__item:nth-child(6n + 3) {
+  margin-left: 33.33333%;
+  margin-right: -100%;
+  clear: none;
+}
+/* line 66, ../../../../../../../../.rvm/gems/ruby-2.2.0/gems/susy-2.2.2/sass/susy/language/susy/_gallery.scss */
+.gif-list__item:nth-child(6n + 4) {
+  margin-left: 50%;
+  margin-right: -100%;
+  clear: none;
+}
+/* line 66, ../../../../../../../../.rvm/gems/ruby-2.2.0/gems/susy-2.2.2/sass/susy/language/susy/_gallery.scss */
+.gif-list__item:nth-child(6n + 5) {
+  margin-left: 66.66667%;
+  margin-right: -100%;
+  clear: none;
+}
+/* line 66, ../../../../../../../../.rvm/gems/ruby-2.2.0/gems/susy-2.2.2/sass/susy/language/susy/_gallery.scss */
+.gif-list__item:nth-child(6n + 6) {
+  margin-left: 83.33333%;
+  margin-right: -100%;
+  clear: none;
+}
+@media (max-width: 600px) {
+  /* line 5, ../scss/modules/_gif-list.scss */
+  .gif-list__item {
+    width: 33.33333%;
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  /* line 66, ../../../../../../../../.rvm/gems/ruby-2.2.0/gems/susy-2.2.2/sass/susy/language/susy/_gallery.scss */
+  .gif-list__item:nth-child(3n + 1) {
+    margin-left: 0;
+    margin-right: -100%;
+    clear: both;
+  }
+  /* line 66, ../../../../../../../../.rvm/gems/ruby-2.2.0/gems/susy-2.2.2/sass/susy/language/susy/_gallery.scss */
+  .gif-list__item:nth-child(3n + 2) {
+    margin-left: 33.33333%;
+    margin-right: -100%;
+    clear: none;
+  }
+  /* line 66, ../../../../../../../../.rvm/gems/ruby-2.2.0/gems/susy-2.2.2/sass/susy/language/susy/_gallery.scss */
+  .gif-list__item:nth-child(3n + 3) {
+    margin-left: 66.66667%;
+    margin-right: -100%;
+    clear: none;
+  }
+}
+
+/* line 1, ../scss/modules/_gif-tile.scss */
+.gif-tile {
+  position: relative;
+}
+/* line 3, ../scss/modules/_gif-tile.scss */
+.gif-tile__link {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+/* line 8, ../scss/modules/_gif-tile.scss */
+.gif-tile__image {
+  display: block;
+}
+/* line 11, ../scss/modules/_gif-tile.scss */
+.gif-tile__tags {
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjAiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMC43NSIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0.75)));
+  background-image: -moz-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75));
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75));
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75));
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 5px 10px;
+  font-size: 13px;
+  text-shadow: -1px 1px 0 rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+
+/* line 1, ../scss/modules/_site-name.scss */
+.site-name {
+  font-family: 'Pathway Gothic One', sans-serif;
+  font-size: 62px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+/* line 8, ../scss/modules/_site-name.scss */
+.site-name a {
+  text-decoration: none;
+}
+/* line 11, ../scss/modules/_site-name.scss */
+.site-name__icon {
+  -moz-border-radius: 35px;
+  -webkit-border-radius: 35px;
+  border-radius: 35px;
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIwLjMiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMC4xIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(255, 255, 255, 0.3)), color-stop(100%, rgba(255, 255, 255, 0.1)));
+  background-image: -moz-linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.1));
+  background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.1));
+  background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.1));
+  margin-right: .5em;
+  font-size: 46px;
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  text-align: center;
+  text-shadow: -1px 2px rgba(0, 0, 0, 0.25);
+  border: 2px solid #333;
+}
+
 /* line 2, ../scss/modules/_wysiwyg.scss */
 .wysiwyg a {
   text-decoration: none;
-  color: #e44053;
+  color: rgba(255, 255, 255, 0.8);
 }
-/* line 19, ../scss/_mixins.scss */
+/* line 35, ../scss/_mixins.scss */
 .wysiwyg a:hover, .wysiwyg a:focus {
   text-decoration: underline;
 }
