@@ -1,0 +1,42 @@
+%u-icon-font,
+.u-icon-font {
+	font-family: $font-icon;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	text-rendering: auto;
+	transform: translate(0, 0);
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+%u-clearfix,
+.u-clearfix {
+	@include clearfix;
+}
+
+%u-reverse,
+.u-reverse {
+	color: $color-canvas;
+	* {
+		color: inherit;
+	}
+	a:hover,
+	a:focus {
+		color: inherit;
+	} // a:hover
+}
+
+%u-screen-reader,
+.u-screen-reader {
+	position: absolute;
+	left: -10000px;
+	top: auto;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+}
