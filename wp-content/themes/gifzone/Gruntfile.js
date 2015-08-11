@@ -30,8 +30,8 @@ module.exports = function(grunt) {
             'js/src/vendor/modernizr-custom.js'
           ],
           'js/dist/application.js': [
-            'js/src/app.js'
-            // 'js/src/modules/header.js'
+            'js/src/app.js',
+            'js/src/angular/gifs.js'
           ]
         }
       }
@@ -112,7 +112,7 @@ module.exports = function(grunt) {
 
   //Tasks
   grunt.registerTask('default', ['js', 'css']);
-  grunt.registerTask('js', ['jshint', 'uglify']);
+  grunt.registerTask('js', ['uglify']);
   grunt.registerTask('css', ['compass']);
 
 };

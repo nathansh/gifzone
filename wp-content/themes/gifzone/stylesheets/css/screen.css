@@ -3571,9 +3571,10 @@ input {
   width: 100%;
   background-image: none;
   border: 1px solid #d7d7d7;
+  background: none;
 }
 
-/* line 74, ../scss/_base-forms.scss */
+/* line 75, ../scss/_base-forms.scss */
 input[type='radio'],
 input[type='checkbox'],
 input[type='file'] {
@@ -3582,7 +3583,7 @@ input[type='file'] {
   width: auto;
 }
 
-/* line 82, ../scss/_base-forms.scss */
+/* line 83, ../scss/_base-forms.scss */
 input[type='radio'],
 input[type='checkbox'] {
   display: inline-block;
@@ -3591,28 +3592,28 @@ input[type='checkbox'] {
 /*
 	Validation states
 */
-/* line 91, ../scss/_base-forms.scss */
+/* line 92, ../scss/_base-forms.scss */
 .has-error label {
   color: #ae0c14;
 }
-/* line 94, ../scss/_base-forms.scss */
+/* line 95, ../scss/_base-forms.scss */
 .has-success label {
   color: #4c7c47;
 }
-/* line 97, ../scss/_base-forms.scss */
+/* line 98, ../scss/_base-forms.scss */
 .has-warning label {
   color: #334558;
 }
 
-/* line 103, ../scss/_base-forms.scss */
+/* line 104, ../scss/_base-forms.scss */
 .has-error input {
   border-color: #ae0c14;
 }
-/* line 106, ../scss/_base-forms.scss */
+/* line 107, ../scss/_base-forms.scss */
 .has-success input {
   border-color: #4c7c47;
 }
-/* line 109, ../scss/_base-forms.scss */
+/* line 110, ../scss/_base-forms.scss */
 .has-warning input {
   border-color: #334558;
 }
@@ -4004,6 +4005,27 @@ input[type='checkbox'] {
   font-size: 13px;
   text-shadow: -1px 1px 0 rgba(0, 0, 0, 0.5);
   overflow: hidden;
+}
+/* line 24, ../scss/modules/_gif-tile.scss */
+.gif-tile__tag {
+  display: inline-block;
+  position: relative;
+  margin-right: 10px;
+}
+/* line 28, ../scss/modules/_gif-tile.scss */
+.gif-tile__tag:after {
+  content: ',';
+  position: absolute;
+  bottom: 0;
+  right: -7px;
+}
+/* line 34, ../scss/modules/_gif-tile.scss */
+.gif-tile__tag:last-of-type {
+  margin-right: 0px;
+}
+/* line 36, ../scss/modules/_gif-tile.scss */
+.gif-tile__tag:last-of-type:after {
+  content: '';
 }
 
 /* line 1, ../scss/modules/_site-name.scss */

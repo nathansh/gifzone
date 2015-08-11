@@ -21,4 +21,21 @@
 		text-shadow: -1px 1px 0 rgba(0, 0, 0, .5);
 		overflow: hidden;
 	} // &__tags
+	&__tag {
+		display: inline-block;
+		position: relative;
+		margin-right: 10px;
+		&:after {
+			content: ',';
+			position: absolute;
+			bottom: 0;
+			right: -7px;
+		} // &:after
+		&:last-of-type {
+			margin-right: 0px;
+			&:after {
+				content: '';
+			} // &:after
+		} // &:last-of-type
+	} // &__tag
 } // .gif-tile

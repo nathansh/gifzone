@@ -36,7 +36,7 @@ add_action( 'wp_enqueue_scripts', 'd7_enqueue_jquery' );
  */
 function d7_enqueue_jquery() {
 
-	$script_location = 'js/main.js';
+	$script_location = 'js/dist/application.js';
 
 	// Setup Google URI, default
 	$protocol = ( isset( $_SERVER['HTTPS'] ) && 'on' == $_SERVER['HTTPS'] ) ? 'https' : 'http';
