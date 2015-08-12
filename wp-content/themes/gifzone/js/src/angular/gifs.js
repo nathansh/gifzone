@@ -3,14 +3,14 @@ var gifZone = angular.module('gifZone', []);
 gifZone.controller('GifZoneListing', ['$scope', '$http', function($scope, $http){
 
 	// Do the AJAX request
-	$http.get('/wp-json/wp/v2/gifs?filter[posts_per_page]=-1')
+	$http.get('/wp-json/wp/v2/gifs?per_page=30')
 
 		// It worked! 👍
 		.success(function(data){
 
 			// Loop through the results
 			for ( var i = 0; i < data.length; i++ ) {
-
+				console.log(data[i]);
 				// Dig out the category to make filtering super eeasy
 				data[i].category = data[i].custom_fields.gif_category;
 
