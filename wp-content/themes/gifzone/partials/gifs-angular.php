@@ -37,9 +37,9 @@
 			<div class="form__group">
 				<label for="gifs-order">Ordery</label>
 				<div class="form-select__wrapper form__control">
-					<select name="order" id="gifs-order" class="form-select" ng-model="order">
-						<option value="newest">Newest</option>
-						<option value="oldest">Oldest</option>
+					<select name="order" id="gifs-order" class="form-select" ng-model="selected_order">
+						<option value="-date" selected="selected">Newest</option>
+						<option value="date">Oldest</option>
 					</select>
 				</div>
 			</div>
@@ -47,8 +47,9 @@
 
 		<!-- Listing -->
 		<ul class="gif-list">
-			<li ng-repeat="gif in results = ( gifs|filter:{category:selected_category, tag:selected_tag} )" class="gif-list__item">
-				<div class="gif-tile editable">
+			<li ng-repeat="gif in results = ( gifs|filter:{category:selected_category, tag:selected_tag}|orderBy:selected_order )" class="gif-list__item">
+			<!-- <li ng-repeat="gif in gifs|filter:{category:selected_category, tag:selected_tag}|orderBy:selected_order" class="gif-list__item"> -->
+				<div class="gif-tile">
 					<a ng-href="{{gif.custom_fields.gif_image.url}}" class="gif-tile__link fresco">
 						<!-- Image -->
 						<img ng-src="{{gif.custom_fields.gif_image.sizes.thumbnail}}" width="150" height="150" />

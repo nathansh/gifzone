@@ -3,10 +3,9 @@ var gifZone = angular.module('gifZone', []);
 gifZone.controller('GifZoneListing', ['$scope', '$http', function($scope, $http){
 
 	// Default values
-	$scope.selected_order = '-date';
 
 	// Do the AJAX request
-	$http.get('/wp-json/wp/v2/gifs?per_page=30')
+	$http.get()
 
 		// It worked! 👍
 		.success(function(data){
