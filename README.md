@@ -11,8 +11,11 @@ Example project for WordCamp 2015 talk on the WP API and Angular.js. For a live 
 ## Resources
 
 ### WP-API
-* [WP REST API docs](wp-api.org)
-* [WP REST API v2](http://v2.wp-api.org/)
+* [Plugin on WordPress.org](https://wordpress.org/plugins/json-rest-api/)
+* [Plugin v2 on WordPress.org](https://wordpress.org/plugins/rest-api/)
+* [Plugin v2 on GitHub](https://github.com/WP-API/WP-API)
+* [Docs](wp-api.org)
+* [Docs v2](http://v2.wp-api.org/)
 * [WordCamp Central API](https://central.wordcamp.org/wp-json/posts?type=wordcamp)
 
 ### Angular.js
