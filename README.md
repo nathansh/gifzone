@@ -24,6 +24,9 @@ Example project for WordCamp 2015 talk on the WP API and Angular.js. For a live 
 * [Lynda.com Angular courses](http://www.lynda.com/AngularJS-training-tutorials/1696-0.html)
 
 ### WordPress
+* [WP CLI (WordPress command line)](http://wp-cli.org/)
+
 Boilerplates I maintain, and are used for all WordPress sites at [Domain7](http://www.domain7.com):
+
 * [Theme boilerplate](https://github.com/domain7/wp-theme_boilerplate)
 * [Site plugin boilerplate](https://github.com/domain7/wp-plugin_boilerplate)
