@@ -1,7 +1,7 @@
 stats
 wp-content/cache*
 !.gitkeep
-wp-content/uploads
+
 wp-config.php
 sitemap.xml
 *.DS_Store
