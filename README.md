@@ -2,11 +2,13 @@
 Example project for WordCamp 2015 talk on the WP API and Angular.js. For a live demo, visit [wc15.nathansh.com](http://wc15.nathansh.com). Don't forget to take a [peek at the API](http://wc15.nathansh.com/wp-json/wp/v2/gifs).
 
 ## Demos
-* [CodePen: Basic Angular sandbox](http://codepen.io/nathansh/pen/vOvJBx)
-* [CodePen: Angular controller with data](http://codepen.io/nathansh/pen/LVMjEZ)
+* [CodePen: Basic Angular sandbox](http://codepen.io/nathansh/pen/aOxKYm?editors=101)
 * [GifZone live demo](http://wc15.nathansh.com/)
 * [GifZone live demo API](http://wc15.nathansh.com/wp-json/wp/v2/gifs)
 * [Client site using live demo API](http://codepen.io/nathansh/pen/aOxJJx?editors=101)
+
+## Slides
+* [Slides from presentation](https://github.com/nathanshubert/wc15-slides)
 
 ## Resources
 
