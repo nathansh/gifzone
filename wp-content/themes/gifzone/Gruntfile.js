@@ -31,7 +31,7 @@ module.exports = function(grunt) {
           ],
           'js/dist/application.js': [
             'js/src/app.js',
-            'js/src/angular/gifs.js'
+            'js/src/angular/gifs--start.js'
           ]
         }
       }

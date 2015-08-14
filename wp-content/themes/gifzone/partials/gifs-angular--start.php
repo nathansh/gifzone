@@ -6,7 +6,7 @@
 			<div class="form__group">
 				<label for="gifs-tag">Tag</label>
 				<div class="form-select__wrapper form__control">
-					<select name="tag" id="gifs-tag" class="form-select">
+					<select name="tag" id="gifs-tag" class="form-select" ng-model="selected_tag">
 						<option value="">All</option>
 						<?php
 							$tags = get_terms('post_tag');
@@ -20,7 +20,7 @@
 			<div class="form__group">
 				<label for="gifs-cat">Category</label>
 				<div class="form-select__wrapper form__control">
-					<select name="cat" id="gifs-cat" class="form-select">
+					<select name="cat" id="gifs-cat" class="form-select" ng-model="selected_category">
 						<option value="">All</option>
 						<?php
 							$categories = get_terms('category');
@@ -34,6 +34,7 @@
 					</select>
 				</div>
 			</div>
+			<!--
 			<div class="form__group">
 				<label for="gifs-order">Ordery</label>
 				<div class="form-select__wrapper form__control">
@@ -43,19 +44,22 @@
 					</select>
 				</div>
 			</div>
+			-->
 		</form>
 
 		<!-- Listing -->
 		<ul class="gif-list">
 			<li class="gif-list__item">
 				<div class="gif-tile">
-					<a href="#" class="gif-tile__link">
+					<a href="" class="gif-tile__link fresco">
 						<!-- Image -->
 						<!-- Tags -->
+						<!--
 						<ul class="gif-tile__tags">
 							<li class="gif-tile__tag">
 							</li>
 						</ul>
+						-->
 					</a>
 				</div>
 			</li>

@@ -25,7 +25,6 @@ gifZone.controller('GifZoneListing', ['$scope', '$http', function($scope, $http)
 			}
 
 			// Save our data to $scope, making it available in the view
-			$scope.gifs = data;
 
 		});
 

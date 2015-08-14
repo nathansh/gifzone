@@ -20,6 +20,8 @@ Example project for WordCamp 2015 talk on the WP API and Angular.js. For a live 
 
 ### Angular.js
 * [Angular.js website](https://angularjs.org/)
+* [ng-repeat](https://docs.angularjs.org/api/ng/directive/ngRepeat)
+* [$http service](https://docs.angularjs.org/api/ng/service/$http)
 * [Egghead.io tutorials](https://egghead.io/technologies/angularjs)
 * [Lynda.com Angular courses](http://www.lynda.com/AngularJS-training-tutorials/1696-0.html)
 

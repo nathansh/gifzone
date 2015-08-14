@@ -27,6 +27,7 @@
 			</select>
 		</div>
 	</div>
+	<!--
 	<div class="form__group">
 		<label for="gifs-order">Ordery</label>
 		<div class="form-select__wrapper form__control">
@@ -36,4 +37,5 @@
 			</select>
 		</div>
 	</div>
+	-->
 </form>
